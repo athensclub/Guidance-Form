@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml" type="BorderPane">
+    <top>
+        <BorderPane>
+            <center>
+                <Label fx:id="title">
+                    <style>
+                        -fx-underline: true;
+                        -fx-font-weight: bold;
+                    </style>
+                </Label>
+            </center>
+        </BorderPane>
+    </top>
+
+    <center>
+        <VBox fx:id="checks" spacing="5"></VBox>
+    </center>
+
+    <bottom>
+        <VBox>
+            <Label fx:id="other"></Label>
+
+            <TextArea wrapText="true"
+                      promptText="ใส่ข้อความที่นี่"
+                      fx:id="otherInput"
+                      prefHeight="150"></TextArea>
+
+            <Text text="คะแนนรวม: 0" fx:id="score"></Text>
+        </VBox>
+    </bottom>
+</fx:root>

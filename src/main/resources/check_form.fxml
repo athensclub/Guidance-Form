@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         type="HBox"
+         spacing="10">
+    <style>
+        -fx-border-color: gray;
+    </style>
+
+    <CheckBox selected="false" indeterminate="false" fx:id="checkbox"></CheckBox>
+    <Text fx:id="text"></Text>
+</fx:root>

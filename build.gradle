@@ -1,0 +1,27 @@
+
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+group 'athensclub'
+version '1.0.0'
+
+mainClassName = 'athensclub.form.guidance/athensclub.form.guidance.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.jfxtras', name: 'jmetro', version: '11.6.12'
+    compile group: 'com.grack', name: 'nanojson', version: '1.6'
+    compile group: 'com.github.librepdf', name: 'openrtf', version: '1.2.0'
+}
+
+javafx {
+    version = "14"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}

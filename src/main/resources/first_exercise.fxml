@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml" type="VBox">
+    <HBox alignment="CENTER">
+        <Label text="ใบงานที่ 1">
+            <style>
+                -fx-underline: true;
+                -fx-font-weight: bold;
+            </style>
+        </Label>
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Text text="ชื่อ"></Text>
+        <TextField fx:id="name" promptText="ใส่ชื่อที่นี่"></TextField>
+        <Text text="ชั้น"></Text>
+        <TextField fx:id="studentClass" promptText="ใส่ชั้นที่นี่"></TextField>
+        <Text text="เลขที่"></Text>
+        <TextField fx:id="number" promptText="ใส่เลขที่ที่นี่"></TextField>
+        <Text text="โรงเรียน"></Text>
+        <TextField fx:id="school" promptText="ใส่โรงเรียนที่นี่"></TextField>
+    </HBox>
+
+    <ScrollPane>
+        <VBox>
+            <Text text="จากแบบสำรวจพหุปัญญา  พบว่า  ปัญญาเด่น  คือ"
+                  style="-fx-font-weight: bold;"></Text>
+            <TextFlow fx:id="bestMatch"></TextFlow>
+            <Text text="ต้องใช้ทักษะอาชีพดังนี้"
+                  style="-fx-font-weight: bold;"></Text>
+            <TextFlow fx:id="skill"></TextFlow>
+            <Text text="อาชีพที่เหมาะสม คือ"
+                  style="-fx-font-weight: bold;"></Text>
+            <TextFlow fx:id="job"></TextFlow>
+        </VBox>
+    </ScrollPane>
+
+    <Text text="อาชีพในอนาคตที่คาดหวัง  คือ"
+          style="-fx-font-weight: bold;"></Text>
+    <TextArea fx:id="hopingJob" wrapText="true" prefHeight="150"></TextArea>
+
+</fx:root>

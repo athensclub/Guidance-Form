@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import athensclub.form.guidance.components.TableForm?>
+<?import javafx.scene.text.Text?>
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         type="BorderPane">
+    <center>
+        <TableForm fx:id="table"></TableForm>
+    </center>
+
+    <bottom>
+        <VBox spacing="5">
+            <Text fx:id="score" text="คะแนนที่ได้: 0"></Text>
+            <Text fx:id="level" text="เกณฑ์"></Text>
+        </VBox>
+    </bottom>
+</fx:root>

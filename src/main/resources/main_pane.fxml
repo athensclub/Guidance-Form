@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import athensclub.form.guidance.components.MergedPage?>
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         type="BorderPane">
+    <style>
+        -fx-font-size: 16;
+    </style>
+
+    <center>
+        <MergedPage fx:id="body"></MergedPage>
+    </center>
+
+    <bottom>
+        <ToolBar>
+            <style>
+                -fx-border-color: gray;
+            </style>
+            <Button text="หน้าก่อนหน้า" fx:id="previousPage" onAction="#onPreviousPage"></Button>
+            <Button text="หน้าถัดไป" fx:id="nextPage" onAction="#onNextPage"></Button>
+            <Separator></Separator>
+            <Button text="ส่งออก..." fx:id="export" onAction="#onExport"></Button>
+        </ToolBar>
+    </bottom>
+</fx:root>
